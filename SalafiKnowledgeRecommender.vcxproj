@@ -24,6 +24,7 @@
     <ProjectGuid>{bc33055e-6f32-457e-a3ed-fda62ec289e4}</ProjectGuid>
     <RootNamespace>SalafiKnowledgeRecommender</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>IslamicKnowledgeRecommendationEngine</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -146,12 +147,16 @@
     <ClCompile Include="src\Book.cpp" />
     <ClCompile Include="src\Reciter.cpp" />
     <ClCompile Include="src\RecommendationEngine.cpp" />
-    <ClCompile Include="src\SalafiKnowledgeRecommender.cpp" />
+    <ClCompile Include="src\IslamicKnowledgeRecommendationEngine.cpp" />
     <ClCompile Include="src\Scholar.cpp" />
     <ClCompile Include="src\UserProfile.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Book.h" />
+    <ClInclude Include="include\Reciter.h" />
+    <ClInclude Include="include\RecommendationEngine.h" />
+    <ClInclude Include="include\Scholar.h" />
+    <ClInclude Include="include\UserProfile.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

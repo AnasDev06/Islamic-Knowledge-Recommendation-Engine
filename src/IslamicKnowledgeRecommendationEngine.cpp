@@ -231,15 +231,14 @@ int main()
     UserProfile user(category, level, interests);
     RecommendationEngine engine;
 
-    printBooks(engine.recommendBooks(books, user));
-
-    // Scholars use their field as the matching category.
-    printScholars(engine.recommendScholars(scholars, user));
-
-    printReciters(engine.recommendReciters(reciters, user));
-
-    printHeader("Recommendation Complete");
-    std::cout << "The results were ranked using a weighted scoring algorithm.\n";
-
+    if (category == "Quran")
+    {
+        printReciters(engine.recommendReciters(reciters, user));
+    }
+    else
+    {
+        printBooks(engine.recommendBooks(books, user));
+        printScholars(engine.recommendScholars(scholars, user));
+    }
     return 0;
 }

@@ -1,0 +1,8 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Folder Name="/Solution Items/" />
+  <Project Path="SalafiKnowledgeRecommender.vcxproj" Id="bc33055e-6f32-457e-a3ed-fda62ec289e4" />
+</Solution>

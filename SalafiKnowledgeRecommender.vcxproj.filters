@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\SalafiKnowledgeRecommender.cpp">
+    <ClCompile Include="src\IslamicKnowledgeRecommendationEngine.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\Book.cpp">
@@ -36,6 +36,18 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Book.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Reciter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RecommendationEngine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Scholar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\UserProfile.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
