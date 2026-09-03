@@ -1,4 +1,4 @@
-# Salafi Knowledge Recommendation Engine
+# Islamic Knowledge Recommendation Engine
 
 A C++ console application that recommends Islamic books, scholars, and Quran reciters based on a user's interests and study level.
 
