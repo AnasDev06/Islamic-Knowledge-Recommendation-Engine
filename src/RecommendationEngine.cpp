@@ -117,9 +117,15 @@ std::vector<ReciterRecommendation> RecommendationEngine::recommendReciters(
 {
     std::vector<ReciterRecommendation> results;
 
+    // Reciters are only relevant when the user is interested in Quran.
+    if (user.getPreferredCategory() != "Quran")
+    {
+        return results;
+    }
+
     for (const Reciter& reciter : reciters)
     {
-        int score = 0;
+        int score = 40; // Quran category match
 
         for (const std::string& interest : user.getInterests())
         {
@@ -130,13 +136,6 @@ std::vector<ReciterRecommendation> RecommendationEngine::recommendReciters(
                     score += 20;
                 }
             }
-        }
-
-        // Reciters do not have a subject category/level, so we use
-        // listening-style interests instead.
-        if (user.getPreferredCategory() == "Quran")
-        {
-            score += 40;
         }
 
         results.push_back({ reciter, score });
