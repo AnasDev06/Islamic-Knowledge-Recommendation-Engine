@@ -9,12 +9,13 @@ Book::Book(
     const std::vector<std::string>& tags
 )
     : id(id),
-    title(title),
-    author(author),
-    category(category),
-    level(level),
-    tags(tags)
-{}
+      title(title),
+      author(author),
+      category(category),
+      level(level),
+      tags(tags)
+{
+}
 
 int Book::getId() const
 {
@@ -44,4 +45,17 @@ std::string Book::getLevel() const
 std::vector<std::string> Book::getTags() const
 {
     return tags;
+}
+
+bool Book::hasTag(const std::string& tag) const
+{
+    for (const std::string& currentTag : tags)
+    {
+        if (currentTag == tag)
+        {
+            return true;
+        }
+    }
+
+    return false;
 }

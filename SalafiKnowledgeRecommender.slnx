@@ -3,5 +3,11 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
+  <Folder Name="/Solution Items/">
+    <File Path="include/Reciter.h" />
+    <File Path="include/RecommendationEngine.h" />
+    <File Path="include/Scholar.h" />
+    <File Path="include/UserProfile.h" />
+  </Folder>
   <Project Path="SalafiKnowledgeRecommender.vcxproj" />
 </Solution>

@@ -144,7 +144,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="src\Book.cpp" />
+    <ClCompile Include="src\Reciter.cpp" />
+    <ClCompile Include="src\RecommendationEngine.cpp" />
     <ClCompile Include="src\SalafiKnowledgeRecommender.cpp" />
+    <ClCompile Include="src\Scholar.cpp" />
+    <ClCompile Include="src\UserProfile.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Book.h" />
